@@ -1,0 +1,12 @@
+{
+  "name": "desafio_1",
+  "version": "1.0.0",
+  "description": "Usar conhecimentos da semana",
+  "type": "module",
+  "main": "index.js",
+  "scripts": { 
+    "test": ""
+  },
+  "author": "",
+  "license": "ISC"
+}
