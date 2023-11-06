@@ -4,9 +4,12 @@
   "description": "Usar conhecimentos da semana",
   "type": "module",
   "main": "index.js",
-  "scripts": { 
-    "test": ""
+  "scripts": {
+    "test": "jest"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
