@@ -22,14 +22,12 @@ export class Pagamento{
           ok: false,
           msg: "Cartão com menos de 13 digitos"
              })
-        } else{
-            reject({
-                ok: false,
-                msg: "Cartão tem mais de 13 digitos"
-            })
-
-        }
-    })
+            }else (`${cartao.numero}`.length > 13) 
+                reject({
+                  ok: false,
+                  msg: "Cartão com mais de 13 digitos"
+                     })
+                    })
     }
         validaLimite(cartao, compraPretendida){
             return new Promise((resolve, reject) => {

@@ -1,4 +1,4 @@
-import { Pagamento } from "../negocios/pagamentos.js";
+import { Pagamento } from "./pagamentos.js";
 const pagamento = new Pagamento ()
 
 let cartao = {
@@ -38,7 +38,7 @@ async function testValidaCartao(){
 
     console.log("TEST: Cartão invalido maior que 13")
     console.log("Resultado: ")
-    cartaoInvalido.numero = 1235567891235
+    cartaoInvalido.numero = 12355678912352
    await  pagamento.validaCartao(cartaoInvalido).then((r) =>{
         console.log(r)
     }).catch((e) =>{
@@ -69,5 +69,5 @@ function testValidaLimite(){
     })
     
 }
-//testValidaCartao()
-testValidaLimite()
+testValidaCartao()
+//testValidaLimite()
