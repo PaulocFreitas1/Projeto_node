@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+      - run: npm init
       - run: npm install
 
   unit-test:
@@ -25,4 +26,7 @@ jobs:
           node-version: 16
       - run: npm install
       - run: npm run test
+<<<<<<< HEAD
+=======
        
+>>>>>>> 42e7a067f3894d4b373506e87e54483927430624
